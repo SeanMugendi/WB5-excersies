@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Label Maker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    .label {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .label p {
+      margin: 0;
+    }
+  </style>
+  <script src="label_maker.js"></script>
+</head>
+<body>
+
+  <h1>Label Maker</h1>
+  <script>
+    // JavaScript code here
+    let myInfo = {
+      name: "Pursalane Faye",
+      address: "121 Main Street",
+      city: "Benbrook",
+      state: "Texas",
+      zip: "76126"
+    };
+
+    function printContact(contact) {
+      console.log(contact.name);
+      console.log(contact.address);
+      console.log(contact.city + ", " + contact.state + " " + contact.zip);
+    }
+
+    printContact(myInfo);
+  </script>
+</body>
+</html>
